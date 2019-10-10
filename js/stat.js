@@ -54,7 +54,7 @@ var renderBar = function (ctx, color, name, time, x, y, width, height, gap) {
   ctx.fillStyle = color;
   ctx.fillRect(x, y, width, height);
   var timeCoordY = y - gap;
-  var nameCoordY = y + 2 * gap + height;
+  var nameCoordY = 2 * gap + height + y;
   ctx.fillStyle = 'black';
   ctx.fillText(name, x, nameCoordY);
   ctx.fillText(Math.floor(time), x, timeCoordY);
